@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Teste Materialize</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--CSS-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    </head>
+
+    <body>
+        
+        <nav class="teal" role="navigation">
+            <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">check_circle</i>Desafio Matemático</a>
+                
+            </div>
+        </nav>
+        
+        <div class="container">
+            
+            <br><br>
+                <h1 class="header center teal-text">Média do Aluno</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Aqui você pode calcular a média do aluno e conferir sua situação (aprovado ou reprovado)</h5>
+                </div>
+                
+                <br><br>
+                
+                
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Informe o nome completo do aluno" id="name" type="text" class="validate">
+                                <label for="name">Nome</label>
+                            </div>
+                            
+                            
+                            
+                            <div class="input-field col m6 s12">
+                                <input placeholder="Informe a nota da 1ª avaliação" id="n1" type="number" step="0.1" class="validate">
+                                <label for="n1">Nota 1</label>
+                            </div>
+                            
+                            <div class="input-field col m6 s12">
+                                <input placeholder="Informe a nota da 2ª avaliação" id="n2" type="number" step="0.1" class="validate">
+                                <label for="n2">Nota 2</label>
+                            </div>
+                            
+                            <div class="input-field col m6 s12">
+                                <input placeholder="Informe a nota da 3ª avaliação" id="n3" type="number" step="0.1" class="validate">
+                                <label for="n3">Nota 3</label>
+                            </div>
+                            
+                            <div class="input-field col m6 s12">
+                                <input placeholder="Informe a nota da 4ª avaliação" id="n4" type="number" step="0.1" class="validate">
+                                <label for="n4">Nota 4</label>
+                            </div>
+                            
+                            <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Escolha uma opção</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Opções</label>
+                            </div>
+                            
+                            <div class="input-field col m6 s12">
+                                <input placeholder="Informe sua data de nascimento" id="nasc" type="text" class="datepicker">
+                                <label for="nasc">Data de nascimento</label>
+                                
+                            </div>
+                            
+                            
+                           
+                        </div>
+                        <br>
+                        <div class="row left">
+                            <a class="waves-effect waves-light btn" onclick="calcula()">calcular</a>
+                        </div>
+                        
+                        <br><br><br>
+                        
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="card-panel teal">
+                                    <span class="white-text">
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </form>
+                    
+                </div>
+                
+                
+
+            
+        </div>
+        
+
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Sobre o Desenvolvedor</h5>
+                        <p class="grey-text text-lighten-4">Ighor Lengruber Ferreira dos Santos é estudante de Sistemas de Infomação na FEMASS (Faculdade Miguel Ângelo da Silva Santos) e desenvolveu este site para executar as atividades da disciplina de Desenvolvimento de Sistemas II, ministrada pela Professora Ana Maria Moura.</p>
+
+
+                    </div>
+                    
+                    <div class="col center l6 s12">
+                        
+                        <img src="img/prefeitura-municipal-de-macae-original.png" height="200" alt="prefeitura-municipal-de-macae-original"/>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+        <!--Scripts-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
