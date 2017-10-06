@@ -3,15 +3,70 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+var a=Math.floor(Math.random()*100);
+var b=Math.floor(Math.random()*100)+1;
+document.querySelector("#d1").innerHTML = a+" + "+b+" = ";
+document.querySelector("#d2").innerHTML = a+" - "+b+" = ";
+document.querySelector("#d3").innerHTML = a+" * "+b+" = ";
+document.querySelector("#d4").innerHTML = a+" / "+b+" = ";
 
-function calcula(){
-    var n1 = parseFloat(document.querySelector("#n1").value);
-    var n2 = parseFloat(document.querySelector("#n2").value);
-    var n3 = parseFloat(document.querySelector("#n3").value);
-    var n4 = parseFloat(document.querySelector("#n4").value);
-    var media = (n1+n2+n3+n4)/4;
-    var status = media<6?'reprovado':'aprovado';
-    Materialize.toast('A média é '+media+' e o aluno está '+status, 5000);
+
+
+
+function verificarResposta1(){
+    var c = parseInt(document.querySelector("#r1").value);
+    if (a+b==c){
+        Materialize.toast('Acertou! Vá para a próxima!', 5000);
+        document.querySelector("#acertou1").innerHTML = "<a class='teal waves-effect waves-light btn' href='desafio2.html'>Próxima</a>";
+    }else{
+        Materialize.toast('Você errou. Tente novamente!', 5000);
+        a=Math.floor(Math.random()*100);
+        b=Math.floor(Math.random()*100);
+        document.querySelector("#d1").innerHTML = a+" + "+b+" = ";
+    }
+    
+}
+
+function verificarResposta2(){
+    var c = parseInt(document.querySelector("#r2").value);
+    if (a-b==c){
+        Materialize.toast('Acertou! Vá para a próxima!', 5000);
+        document.querySelector("#acertou2").innerHTML = "<a class='teal waves-effect waves-light btn' href='desafio2.html'>Próxima</a>";
+    }else{
+        Materialize.toast('Você errou. Tente novamente!', 5000);
+        a=Math.floor(Math.random()*100);
+        b=Math.floor(Math.random()*100);
+        document.querySelector("#d2").innerHTML = a+" - "+b+" = ";
+    }
+    
+}
+
+function verificarResposta3(){
+    var c = parseInt(document.querySelector("#r3").value);
+    if (a*b==c){
+        Materialize.toast('Acertou! Vá para a próxima!', 5000);
+        document.querySelector("#acertou3").innerHTML = "<a class='teal waves-effect waves-light btn' href='desafio2.html'>Próxima</a>";
+    }else{
+        Materialize.toast('Você errou. Tente novamente!', 5000);
+        a=Math.floor(Math.random()*100);
+        b=Math.floor(Math.random()*100);
+        document.querySelector("#d3").innerHTML = a+" * "+b+" = ";
+    }
+    
+}
+
+function verificarResposta4(){
+    var c = parseInt(document.querySelector("#r4").value);
+    if (a/b==c){
+        Materialize.toast('Acertou! Vá para a próxima!', 5000);
+        document.querySelector("#acertou4").innerHTML = "<a class='teal waves-effect waves-light btn' href='desafio2.html'>Próxima</a>";
+    }else{
+        Materialize.toast('Você errou. Tente novamente!', 5000);
+        a=Math.floor(Math.random()*100);
+        b=Math.floor(Math.random()*100)+1;
+        document.querySelector("#d4").innerHTML = a+" / "+b+" = ";
+    }
+    
 }
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Teste Materialize</title>
+        <title>Desafio 1</title>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -17,56 +17,80 @@
     </head>
 
     <body>
-        
+
         <nav class="teal" role="navigation">
-            <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">check_circle</i>Desafio Matemático
-                    
+            <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="material-icons">check_circle</i>Desafio Matemático</a>
 
-
-                
-                </a>
-                
             </div>
         </nav>
-        
+
+
+
         <div class="container">
-            
+
             <br><br>
-            <h1 class="header center teal-text">Seja Bem-Vindo!</h1>
+            <h2 class="header center teal-text"><i class="material-icons small">add_circle</i> 1º Desafio</h2>
             <div class="row center">
-                <h5 class="header col s12 light">Para jogar, você deve responder às perguntas a seguir e clicar em "Responder". Se acertar, poderá ir para a próxima rodada, clicando em "Próxima". Se errar, deverá tentar novamente. Vamos começar?</h5>
+                <h5 class="header col s12 light">Responda à expressão a seguir:</h5>
             </div>
+            
+            <div class="row center">
+
+                <div class="col right-align s12 m6">
+                    <h5 class="header light" id="d1"></h5>
+                </div>
+
+                <div class="input-field col left-align m6 s12">
+                    <input id="r1" type="number" class="validate">
+                    <label for="r1">sua resposta</label>
+                </div>
+
+            </div>
+            
 
             <br>
 
+            
             <div class="row center">
 
-                <a class="orange waves-effect waves-light btn" href="desafio1.html">Estou pronto</a>
+                <div class="col right-align s12 m6">
+                    <a class="orange waves-effect waves-light btn" onclick="verificarResposta1()">Responder</a>
+                </div>
                 
+                <div class="col left-align s12 m6" id="acertou1">
+                    
+                </div>
+
+                
+
             </div>
-            <br><br>
-
-                
-                
-                
-                
-
             
+            
+           
+
+
+
+            <br>
+            <br>
+
+
+
+
         </div>
-        
+
 
         <footer class="page-footer grey darken-3">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text">Sobre o Desenvolvedor</h5>
-                        <p class="grey-text text-lighten-4">Ighor Lengruber Ferreira dos Santos é estudante de Sistemas de Infomação na FEMASS (Faculdade Miguel Ângelo da Silva Santos) e desenvolveu este site para executar a avaliação da disciplina de Desenvolvimento de Sistemas II, ministrada pela Professora Ana Maria Moura.</p>
+                        <p class="grey-text text-lighten-4">Ighor Lengruber Ferreira dos Santos é estudante de Sistemas de Infomação na FEMASS (Faculdade Miguel Ângelo da Silva Santos) e desenvolveu este site para executar as atividades da disciplina de Desenvolvimento de Sistemas II, ministrada pela Professora Ana Maria Moura.</p>
 
 
                     </div>
-                    
+
                     <div class="col center l6 s12">
-                        
+
                         <img src="img/prefeitura-municipal-de-macae-original.png" height="200" alt="prefeitura-municipal-de-macae-original"/>
 
 
